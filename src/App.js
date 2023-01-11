@@ -1,11 +1,11 @@
 import React from "react";
-import Peer from "./Components/Peer";
+import Nav from "./Components/Nav";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <Peer />
+      <Nav />
     </div>
   );
 }
