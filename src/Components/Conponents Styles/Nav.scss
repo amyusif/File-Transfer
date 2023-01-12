@@ -7,7 +7,6 @@ $tetiaryColor: #8db596;
   justify-content: space-around;
   height: 90px;
   align-items: center;
-  // padding: 0px 20px;
 }
 .logo-container {
   display: flex;
@@ -18,8 +17,6 @@ $tetiaryColor: #8db596;
     color: $primaryColor;
     font-family: "Mina", sans-serif;
   }
-
-  // justify-content: center;
 }
 
 .img-log {
@@ -95,13 +92,12 @@ $tetiaryColor: #8db596;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  // flex-direction: column;
 
   h1 {
     color: $primaryColor;
     font-size: 5em;
     font-family: "Space Grotesk", sans-serif;
-    // line-height: -10px;
+
     span {
       display: flex;
       justify-content: center;
@@ -160,5 +156,113 @@ $tetiaryColor: #8db596;
     color: $primaryColor;
     box-shadow: rgb(227, 217, 217, 0.2);
     cursor: pointer;
+  }
+}
+.btn-pages {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .Links {
+    display: none;
+  }
+
+  .btn-login,
+  .sign-Up {
+    display: none;
+  }
+
+  .btn-pages {
+    display: flex;
+    text-decoration: none;
+    padding: 10px 17px;
+    color: $primaryColor;
+    margin-right: 10px;
+    border: 1px solid $tetiaryColor;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-left: 40px;
+
+    &:hover {
+      transition: 0.2s;
+      background-color: $tetiaryColor;
+    }
+  }
+
+  .text-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      color: $primaryColor;
+      font-size: 3.4em;
+      font-family: "Space Grotesk", sans-serif;
+
+      span {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+    font-size: 1.1em;
+    margin-top: 10px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      margin-top: 3.8px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .text-content {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      color: $primaryColor;
+      font-size: 2.2em;
+      font-family: "Space Grotesk", sans-serif;
+
+      span {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .desc {
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+    font-size: 13px;
+    margin-top: 20px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      margin-top: 3.8px;
+    }
+  }
+
+  .card-body {
+    width: 150px;
+    height: 120px;
+  }
+
+  .App{
+    height: 85vh;
   }
 }
