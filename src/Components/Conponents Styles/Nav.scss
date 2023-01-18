@@ -54,7 +54,6 @@ $tetiaryColor: #8db596;
   text-decoration: none;
   padding: 10px 17px;
   color: $primaryColor;
-  // margin-right: 10px;
   border: 1px solid $primaryColor;
   border-radius: 7px;
 
@@ -163,6 +162,10 @@ $tetiaryColor: #8db596;
 }
 
 @media (max-width: 1000px) {
+  .App {
+    margin: 0px;
+    border-radius: 0px;
+  }
   .Links {
     display: none;
   }
@@ -223,6 +226,10 @@ $tetiaryColor: #8db596;
 }
 
 @media (max-width: 650px) {
+  .App {
+    margin: 0px;
+    border-radius: 0px;
+  }
   .text-content {
     margin-top: 30px;
     margin-left: 10px;
@@ -262,7 +269,7 @@ $tetiaryColor: #8db596;
     height: 120px;
   }
 
-  .App{
+  .App {
     height: 85vh;
   }
 }
